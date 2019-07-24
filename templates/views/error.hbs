@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="icon" href="/img/weather.png">
+    </head>
+    <body>
+        {{>header}}
+        <div class="main-content" style="text-align: center;">
+            <h1 style="color: red; font-size: 30px; font-style: italic;">
+                {{errorMessage}}
+            </h1>
+            <img src="https://media.giphy.com/media/14uQ3cOFteDaU/giphy.gif" alt="error">
+        </div>
+        {{>footer}}
+    </body>
+</html>
