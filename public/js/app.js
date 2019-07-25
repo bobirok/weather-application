@@ -20,8 +20,11 @@ weatherForm.addEventListener('submit', (e) => {
         }
         else {
             error[0].innerHTML = ''
-            correct[0].innerHTML = data.location + '   Summary: ' + data.forecast.summary + '  ' + 
-            data.forecast.temperature + 'F.  Chance of rain: ' + data.forecast.precip
+            correct[0].innerHTML = data.location + '</br> '+ 
+             'Summary: ' + data.forecast.summary + '</br> ' + 
+              'The temperature is: ' + data.forecast.temperature + 'F. </br> ' + 
+             'Chance of rain: ' + data.forecast.precip + '</br>' + 
+              'The visibility is: ' + data.forecast.visibility + '%'
         }
     })
 })
